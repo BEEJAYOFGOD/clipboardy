@@ -15,10 +15,16 @@ body {
 }
 
 .combined {
-  width: 60%;
+  height: auto;
+  width: 50%;
   display: flex;
   justify-content: center;
-  margin: -70% 20% 0%;
+  margin: -70% auto 0%;
+}
+
+.combined img {
+  height: 100%;
+  width: 100%;
 }
 
 p {
@@ -44,6 +50,7 @@ p {
   width: 100%;
   border: none;
   padding: 12px 25px;
+  font-size: 1rem;
   border-radius: 30px;
   margin-top: 20px;
   box-shadow: 0px 10px 20px 0px #00000019;
@@ -96,7 +103,7 @@ button:nth-child(2) {
 
 .combined-small {
   margin: auto;
-  width: 60%;
+  width: 50%;
   display: flex;
   justify-content: center;
   margin-top: 2em;
@@ -111,16 +118,31 @@ button:nth-child(2) {
 }
 
 .footer p {
-  font-size: 0.7em;
+  font-size: 1em;
   margin: 0;
   text-align: center;
   color: #4c545c;
 }
 
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 1024px) {
   .combined {
-    width: 80%;
-    margin: -90% auto 2%;
+    width: 60%;
+    margin: -80% auto 2%;
+  }
+  .history-copy {
+    margin-bottom: 0%;
+    max-width: 55%;
+    text-align: center;
+    margin: auto;
+  }
+  .download-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2%;
+    justify-content: center;
+  }
+  .download-buttons button {
+    width: 30%;
   }
   .combined img {
     width: 20%;
@@ -131,5 +153,59 @@ button:nth-child(2) {
   }
   .history-copy {
     margin-top: 0%;
+  }
+
+  p {
+    margin-bottom: 0;
+    margin-top: 0%;
+  }
+
+  .track-copy {
+    width: 60%;
+    margin: 2% auto;
+  }
+
+  .desktop-side {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    gap: 2rem;
+  }
+
+  .desktop-side .screens {
+    margin: auto;
+    width: 50%;
+    margin: 0;
+  }
+  .desktop-side_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .desktop-side_txt p {
+    text-align: left;
+    margin: 0;
+    margin-left: 2%;
+  }
+  .articles {
+    display: flex;
+  }
+  .screens {
+    width: 60%;
+    margin: 1rem auto 0;
+  }
+  .brand__logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+  .brand__logos div {
+    width: 20%;
+  }
+  .brand__logos img {
+    width: 100%;
   }
 }

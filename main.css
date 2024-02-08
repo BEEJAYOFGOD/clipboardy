@@ -18,10 +18,7 @@ body {
   width: 60%;
   display: flex;
   justify-content: center;
-
-  margin-top: -60%;
-
-  margin: -60% 20% 0%;
+  margin: -70% 20% 0%;
 }
 
 p {
@@ -45,26 +42,21 @@ p {
 
 .download-buttons button {
   width: 100%;
-  color: red;
   border: none;
-}
-
-button:nth-child(1) {
-  background-color: #26bba4;
-  border-radius: 30px;
-  color: white;
-  padding: 12px 25px;
-  box-shadow: 0px 10px 20px 0px #00000019;
-  box-shadow: 0px -3px 0px 0px #00000027 inset;
-}
-
-button:nth-child(2) {
-  background: #6174ff;
   padding: 12px 25px;
   border-radius: 30px;
   margin-top: 20px;
   box-shadow: 0px 10px 20px 0px #00000019;
   box-shadow: 0px -3px 0px 0px #00000027 inset;
+  color: white;
+}
+
+button:nth-child(1) {
+  background-color: #26bba4;
+}
+
+button:nth-child(2) {
+  background: #6174ff;
 }
 
 .screens {
@@ -123,4 +115,21 @@ button:nth-child(2) {
   margin: 0;
   text-align: center;
   color: #4c545c;
+}
+
+@media only screen and (min-width: 1040px) {
+  .combined {
+    width: 80%;
+    margin: -90% auto 2%;
+  }
+  .combined img {
+    width: 20%;
+  }
+  .history-text {
+    margin-top: 0%;
+    margin-bottom: 1em;
+  }
+  .history-copy {
+    margin-top: 0%;
+  }
 }

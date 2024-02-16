@@ -255,7 +255,11 @@ button:nth-child(2) {
     height: 100%;
   }
   article .track-copy {
-    width: 90%;
+    min-width: 98%;
+  }
+  .google {
+    fill: green;
+    stroke: red;
   }
   .screens {
     width: 60%;

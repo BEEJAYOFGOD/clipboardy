@@ -257,6 +257,8 @@ button:nth-child(2) {
   article .track-copy {
     min-width: 98%;
   }
+
+
   .google {
     fill: green;
     stroke: red;
